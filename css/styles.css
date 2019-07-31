@@ -37,6 +37,11 @@ body{
     color:white;
     opacity: 0.8;
 }
+#par{
+    text-align: center;
+    background-color: black;
+    color:white
+}
 ul{
     text-align: center;
     margin-left:30%;
