@@ -30,6 +30,8 @@ body{
 h1{
 text-align:center;
 margin-top:-20px;
+
+color:slategrey;
  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
     #a:hover{
@@ -54,17 +56,30 @@ margin-top:-20px;
     #ordern {
        margin-top:260px;
        margin-left:500px;
-       color:white;
-       background-color:black;
+       
+        background-color:slategrey;
+    
     }
     #ordern:hover{
         transform: scale(1.1);
+        background-color: blanchedalmond;
     }
 
 #pa h3{
     margin-top:-50px;
 }
-
+.click1 >h3{
+    color:slategrey;
+}
+.click2 >h3{
+    color:slategrey;
+}
+.click3 >h3{
+    color:slategrey;
+}
+.click4 >h3{
+    color:slategrey;
+}
   div.label{
       margin: 0%;
       padding: 0%;
@@ -97,7 +112,8 @@ margin-top:-20px;
   input[type="submit"]{
       margin-top:2em;
       text-align:center;
-      background-color:skyblue;
+      
+    background-color:slategrey;
       
   }
   input[type="submit"]:hover{
@@ -125,15 +141,17 @@ display:none;
   }
   #butt{
       margin-right:20px;
-      margin:10px;
+      
       width:120px;
       height:40px;
   }
   #add{
-      background-color: skyblue;
+        background-color:slategrey;
+        margin:10px;
   }
   #submit{
       margin-left:540px;
+      margin-top:-200px;
   }
   #cost1{
       
@@ -165,4 +183,12 @@ display:none;
     margin-top:-260px;
     text-align: center;
     font-weight: bold;
+}
+ #showbill{
+    margin-top:300px;
+    background-color:slategrey;
+}
+#showbill h3{
+    text-align:center;
+    
 }
