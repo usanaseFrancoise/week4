@@ -17,6 +17,7 @@
                   <nav>
                       <ul>
                           <li><a href="index.html">WELCOME</a></li> 
+                         
                            <li><a href="file1.html">ORDER NOW</a></li>
                           <li><a href="style.html">CONTACT</a></li>
                          
@@ -34,31 +35,46 @@
                     <div class="click4">
                 <img id="b" src="img/photo-1534308983496-4fabb1a015ee.jpeg" height="310px" width="250px">
                 <h3><br>PEPERONI pizza</h3>
+                <div id="cost1">
+                    <h4>5500rwf</h4>
                 </div>
+                </div>
+              
             </div>
             <div class="col-md-3">
                     <div class="click1">
                 <img id="a" src="img/DSC2213ul.jpg" height="310px" width="250px">
                 <h3 id=pa><br>PIZERIA pizza</h3>
                 </div>
+                <div id="cost2">
+                        <h4>6500rwf</h4>
+                    </div>
             </div>
             <div class="col-md-3">
                     <div class="click2">
                     <img  id="c"src="img/Hawaiian-BBQ-Chicken-PIzza-new-706x1024.jpg" height="310px" width="250px">
                    <h3><br>CHICKEN pizza</h3>
                    </div>
+                   <div id="cost3">
+                        <h4>8500rwf</h4>
+                    </div>
                 </div>
                 <div class="col-md-3">
                         <div class="click3">
                         <img  id="d" src="img/40613094-tuna-fish-pizza-with-pineapple-chunks-and-melted-mozzarella-cheese-isolated-on-a-white-background.jpg " height="310px" width="250px">
                         <h3><br>DEEP FISH pizza</h3>
                         </div>
+                        <div id="cost4">
+                                <h4>7500rwf</h4>
+                            </div>
                 </div>
             </div>
-                 
+              
         </div>
         <button id="ordern"> ORDER NOW </button>
         <form id="form">
+            <div class="checked">
+                <div id="checked1">
             <h2>pizza Form</h2>
             <div class="label">
                 Name
@@ -79,6 +95,27 @@
                     <input id="id-phone"
                            type="text"
                            size="10">
+                           
+                           <div id="choose">
+                            choose
+                           </div>
+                           <select>
+                            <option value="choose Pizza">select Pizza</option>
+                            <option value="PEPERONI pizza">PEPERONI pizza</option>
+                            <option value="PIZERIA pizza">PIZERIA pizza</option>
+                            <option value="CHICKEN pizza">CHICKEN pizza</option>
+                            <option value="DEEP FISH pizza">DEEP FISH pizza</option>
+                          </select>
+                          <div id="size">
+                            Pizza size
+                           </div>
+                           <select>
+                            <option value=" Pizza size">  Select Size</option>
+                            <option value="SMALL"> SMALL             </option>
+                            <option value="MEDIUM">MEDIUM</option>
+                            <option value="BIG ">BIG </option>
+                          </select>
+                        
                     <div class="group">
                         <div class="title">
                             Crust
@@ -153,10 +190,15 @@
                                                 type="number"
                                                 min=1
                                                 class="form-control">
-                                        
+                                  </div>
+                                  </div>
+                                  <span class= "btn btn-primary" id="add">Add Pizza</span>
+                                                
                                         <input type="submit"
+                                              id="submit"
                                                value="Submit Order"
                                                onlick="SubmitOrder(event)">
+                                              
         </form>
 </div>
 <script src="js/jquery-3.4.1.js"></script>

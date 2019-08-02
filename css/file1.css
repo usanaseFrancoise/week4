@@ -129,3 +129,12 @@ display:none;
       width:120px;
       height:40px;
   }
+  #add{
+      background-color: skyblue;
+  }
+  #submit{
+      margin-left:540px;
+  }
+  #cost1{
+      color:black;
+  }
