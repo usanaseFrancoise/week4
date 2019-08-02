@@ -107,3 +107,11 @@ margin-top:-20px;
   #form{
 display:none;
   }
+  #id-number{
+      width:120px;
+     
+      font-size:100%;
+      font-weight:bold;
+      color:black;
+      display:block;
+  }
