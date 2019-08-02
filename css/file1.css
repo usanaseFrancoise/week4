@@ -34,25 +34,25 @@ margin-top:-20px;
 }
     #a:hover{
         transform: scale(1.1);
-        opacity: 0.8;
+        
     }
     #b:hover{
         transform: scale(1.1);
-        opacity: 0.8;
+     
     }
     #c:hover{
         transform: scale(1.1);
-        opacity: 0.8;
+      
     }
     #d:hover{
         transform: scale(1.1);
-        opacity: 0.8;
+      
     }
     #photo img {
         margin-top: 40px;
     }
     #ordern {
-       margin-top:40px;
+       margin-top:260px;
        margin-left:500px;
        color:white;
        background-color:black;
@@ -136,5 +136,33 @@ display:none;
       margin-left:540px;
   }
   #cost1{
-      color:black;
+      
+      font-size:65px;
+      margin-top:-260px;
+      text-align: center;
+      font-weight: bold;
   }
+  #cost2{
+      
+    font-size:65px;
+    margin-top:-260px;
+    text-align: center;
+    font-weight: bold;
+}
+#cost3{
+      
+    font-size:200px;
+    font-style: italic;
+    margin-top:-260px;
+    text-align: center;
+    font-weight:bold;
+    color:black;;
+    background: 20px;
+}
+#cost4{
+      
+    font-size:200px;
+    margin-top:-260px;
+    text-align: center;
+    font-weight: bold;
+}
