@@ -4,17 +4,15 @@ $(document).ready(function() {
         $("#ordern").show ();  
           
     });
-    $("#ordern").click(function() {
-        $("#form").show();
-        $("#ordern").show ();  
 });
-$(".#ordern").click(function() {
-    $("#form").show();
-    $("#ordern").show ();  
-}); $("#ordern").click(function() {
-    $("#form").show();
-    $("#ordern").show ();  
-});
+$(document).ready(function() {
+$(".submit").click(function() {
+   
+    $(".Showbill").show();
+    $(".submit").show();
+    
+    
+});   
 });
 $(document).ready(function() {
     $("#add").click(function() {
@@ -108,4 +106,29 @@ $(document).ready(function() {
                                         '<input id="id-number" type="number" min="1"class="form-control">'+
                                   '</div>');
     });
-    });
+});
+    function Pizza_Orders(one,two,three,forth){
+        this.types=one;
+        this.size=two;
+        this.toppings=three;
+        this.quantity=forth;
+        this.crust=fifth
+    }
+    Pizza_Orders.prototype.fullOrder=function(){
+        return this.types+" "+this.size+" "+this.toppings+ " "+this.quantity+" "+this.crust+" "
+    }
+
+$(document).ready(function(){
+    $("form#form").submit(function(event){
+
+      event.preventDefault();
+      var inputtedtypes=$("select#c2").val();
+      var inputtedsize=$("select#c1").val();
+      var inputtedtoppings=$("select#group").val();
+      var inputtedquantity=$("select#add").val();
+      var inputtedcrust=$("select#group").val();
+      
+      var newPizza_Order=new Pizza_Orders(inputtedtypes,inputtedsize,inputtedtoppings,inputtedquantity,inputtedcrust);
+      console.log(newPizza_Order);
+})
+});

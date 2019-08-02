@@ -149,10 +149,22 @@ display:none;
         background-color:slategrey;
         margin:10px;
   }
-  #submit{
+  /* #submit{
       margin-left:540px;
       margin-top:-200px;
-  }
+  } */
+  #submit{
+      width:90px;
+      height:30px;
+      margin-top:-60px;
+      margin-left:540px;
+      color:black;
+
+      background-color:slategrey;
+}
+
+
+
   #cost1{
       
       font-size:65px;
@@ -184,11 +196,12 @@ display:none;
     text-align: center;
     font-weight: bold;
 }
- #showbill{
+ .Showbill{
     margin-top:300px;
     background-color:slategrey;
+     display: none;  
 }
-#showbill h3{
+.Showbill h3{
     text-align:center;
-    
+
 }
