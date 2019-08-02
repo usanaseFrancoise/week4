@@ -58,16 +58,16 @@ $(document).ready(function() {
                             'Crust'+
                         '</div>'+
                         '<div class="label">'+
-                           ' <input id="id-crust"  name="crust" type="radio" value="Thin">'+
+                           ' <input id="id-crust "  name="crust " type="radio" value="Thin">'+
                                    
                                     'Thin'+                                 
                         '</div>'+
                         '<div class="label">'+
-                                '<input id="id-crust" name="crust" type="radio" value="Classic">'+
+                                '<input id="id-crust " name="crust " type="radio" value="Classic">'+
                                         'Classic'+
                             '</div>'+
                             '<div class="label">'+
-                                   ' <input id="id-crust" name="crust" type="radio" value="Deep Dish">'+
+                                   ' <input id="id-crust " name="crust " type="radio" value="Deep Dish">'+
                                            ' Deep Dish'+
                                 '</div>'+
                     '</div>'+
@@ -107,28 +107,49 @@ $(document).ready(function() {
                                   '</div>');
     });
 });
-    function Pizza_Orders(one,two,three,forth){
+    function Pizza_Orders(one,two,three,forth,fifth){
         this.types=one;
         this.size=two;
         this.toppings=three;
         this.quantity=forth;
-        this.crust=fifth
+        this.crust =fifth;
     }
     Pizza_Orders.prototype.fullOrder=function(){
-        return this.types+" "+this.size+" "+this.toppings+ " "+this.quantity+" "+this.crust+" "
+        return this.types+" "+this.size+" "+this.toppings+ " "+this.quantity+" "+this.crust +" "
     }
 
 $(document).ready(function(){
     $("form#form").submit(function(event){
 
       event.preventDefault();
-      var inputtedtypes=$("select#c2").val();
-      var inputtedsize=$("select#c1").val();
-      var inputtedtoppings=$("select#group").val();
+      var inputtedsize=$("select#c2").val();
+      var inputtedtypes=$("select#c1").val();
+      var inputtedtoppings=$("select#id-crust").val();
       var inputtedquantity=$("select#add").val();
       var inputtedcrust=$("select#group").val();
       
       var newPizza_Order=new Pizza_Orders(inputtedtypes,inputtedsize,inputtedtoppings,inputtedquantity,inputtedcrust);
       console.log(newPizza_Order);
-})
+      $("ul#contacts").append("<li><span class='contact'>"+newPizza_Order.fullOrder() + "</span></li>");
+      $(".contact").last().click(function(){
+     $("show-contact").show();
+     $("show.contact h2").text(newPizza_Order.fullOrder());
+     $(".name").text(newPizza_Order.name);
+     $(".Address").text(newPizza_Order.Address);
+     $(".Phone").text(newPizza_Order.Phone);
+     $(".Pizza size").text(newPizza_Order.Pizza-size);
+     $(".Crust").text(newPizza_Order.Crust);
+     $(".Toppings").text(newPizza_Order.Toppings);
+     $(".Pizza Number").text(newPizza_Order.Pizza.Number);
+
+      });
+      
+});
+$("input#id-name").val(" ");
+$("input#id-address").val(" ");
+$("input#id-phone").val(" ");
+$("input#c1").val(" ");
+$("input#c2").val(" ");
+$("input#id-crust ").val(" ");
+$("input#id_topping").val(" ");
 });
