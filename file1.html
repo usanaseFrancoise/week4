@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    
     <div class="container">
 
         <div class="row">
@@ -35,7 +36,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="click4">
-                        <img id="b" src="img/photo-1534308983496-4fabb1a015ee.jpeg" height="310px" width="250px">
+                        <img id="b" src="img/photo-1534308983496-4fabb1a015ee.jpeg"  height="310px" width="280px" hspace="13">
                         <h3><br>PEPERONI pizza</h3>
                         <div id="cost1">
                             <h4>5500rwf</h4>
@@ -45,7 +46,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="click1">
-                        <img id="a" src="img/DSC2213ul.jpg" height="310px" width="250px">
+                        <img id="a" src="img/DSC2213ul.jpg" height="310px" width="280px" hspace="13" >
                         <h3 id=pa><br>PIZERIA pizza</h3>
 
                         <div id="cost2">
@@ -55,7 +56,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="click2">
-                        <img id="c" src="img/Hawaiian-BBQ-Chicken-PIzza-new-706x1024.jpg" height="310px" width="250px">
+                        <img id="c" src="img/Hawaiian-BBQ-Chicken-PIzza-new-706x1024.jpg"  height="310px" width="280px" hspace="13">
                         <h3><br>CHICKEN pizza</h3>
                         <div id="cost3">
                             <h4>8500rwf</h4>
@@ -66,7 +67,7 @@
                     <div class="click3">
                         <img id="d"
                             src="img/40613094-tuna-fish-pizza-with-pineapple-chunks-and-melted-mozzarella-cheese-isolated-on-a-white-background.jpg "
-                            height="310px" width="250px">
+                            height="310px" width="280px" hspace="13">
                         <h3><br>DEEP FISH pizza</h3>
 
                         <div id="cost4">
@@ -78,7 +79,7 @@
 
         </div>
         <button id="ordern"> ORDER NOW </button>
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-md-6">
                 <form id="form">
                     <div class="checked">
@@ -121,7 +122,7 @@
                                 <option value="MEDIUM">MEDIUM</option>
                                 <option value="BIG ">BIG </option>
                             </select>
-                        
+                        <div id="crust">
                             <div class="group">
                                 <div class="title">
                                     Crust
@@ -139,6 +140,8 @@
                                     Deep Dish
                                 </div>
                             </div>
+                        </div>
+                        <div id=topping>
                             <div class="group">
                                 <div class="title">
                                     Toppings
@@ -168,6 +171,7 @@
                                     Extra chees
                                 </div>
                             </div>
+                        </div>
                             <div class="label">
                                 Pizza Number
                             </div>
@@ -182,25 +186,128 @@
                 </form>
             </div>
             <div class="col-md-6">
-
+  <ul id="your"></ul>
                 <div class="Showbill">
                     <h3>YOUR BILL</h3>
                     <h2></h2>
                     <p>name: <span class="name"></span></p>
-                    <p>Address: <span class="Address"></span></p>
-                    <p>Phone : <span class="Phone"></span></p>
-                    <p>choose : <span class="choose"></span></p>
+                    <p>types<span class="choose"></span></p>
                     <p>Pizza size: <span class="Pizza size"></span></p>
                     <p>Crust : <span class="Crust"></span></p>
                     <p>Toppings : <span class="Toppings"></span></p>
-                    <p>Pizza Number : <span class="Pizza Number"></span></p>
+                   
 
 
 
                 </div>
             </div>
         </div>
+    </div> -->
+    <div class="ad">
+           <div class="cont">
+            <div class="row">
+                <div class="col-md-6">
+                                   
+                        <form id="new-pizz">
+                            
+                                <!-- <div class="walrus-showing" id="one">   -->
+                                    <div class="form-group">
+                                        <label for="type-pizza"><strong>Type of pizza :     </strong></label>
+                                <select class="form-control" id="type" value="type" >
+                                    <option  value="choose Pizza">select Pizza</option>
+                                    <option  id="PEPERONI pizza">PEPERONI pizza</option>
+                                    <option  id="PIZERIA pizza">PIZERIA pizza</option>
+                                    <option  id="CHICKEN pizza">CHICKEN pizza</option>
+                                    <option  id="DEEP FISH pizza">DEEP FISH pizza</option>
+                                 </select>
+                                </div>
+                          <div class="form-group">
+                                
+                                        <label for="size"><strong>Pizza Size:      </strong></label>
+                                <select class="form-control" id="new-size" value="size">
+                                    <option  value=" Pizza Size">select Pizza size</option>
+                                    <option  id="Small" >Small</option>
+                                    <option  id="Medium" >Medium</option>
+                                    <option  id="Large">Large</option>
+                                         
+                                 </select>
+                         </div>
+                         
+                      <!-- <br>   -->
+                      <div id="new-pizzas">
+                            <div class="new-pizza">
+                          <div class="form-group">
+                            <label for="new-number"><strong>Number of Pizza:</strong></label>
+                    <input type="number" min=1 class="form-control" >
+                      
+                     
+                    </div>
+                    
+                    <div class="form-group">
+                    <label for="new-crust"><strong>Favorite Crust:</strong></label>
+            <select class="form-control new-crust" id="new-crust">
+                <option  value=" Pizzas  crust">Pizzas  crust</option>
+                <option  id="crust">Thin Crust</option>
+                <option  id="crust">Thick Crust</option>
+                <option  id="crust">FatBread Crust</option>
+                <option  id="crust">Custom Crust</option>
+                
+                     
+             </select>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="new-toppings"><strong>Favorite Toppings:</strong></label>
+        <select class="form-control new-toppings" id="new-toppings"  >
+            <option  value=" Pizzas  Toppings">Pizzas  Toppings</option>
+            <option  id="topping">Mushrooms</option>
+            <option  id="topping">Onions</option>
+            <option  id="topping">Green peppers</option>
+            <option  id="topping">Black olives</option>
+            
+                 
+         </select>
+        </div>
+        <br>
+                    <div class="form-group">
+                            <label for="new-location"><strong>your Location:</strong></label>
+                        <input id="new-location" class="form-control" type="text" placeholder="Enter your Location">
+                    </div>
+            </div>
     </div>
+                    <br>
+                    <span class="btn btn-primary" id="add-address">Add another</span>
+                    <button type="submit" class="btn" id="add">SUbmit</button>
+                  
+                </div>
+                
+     
+     <!-- <div class="row"> -->
+        <div class="col-md-6">
+      
+                <ul id="your"></ul>
+
+       
+            <div id="show-your-order">
+                <h3 id="head"><u>List of your Order</u></h3>
+                <h5> </h5>
+                <p><strong>Size of Pizza  :</strong> <span class="pizza-size"></span> </p>
+                <p><strong>Type of pizza  :</strong><span class="pizza-type"></span></p>
+                <p><strong>Number of Pizza:</strong><span class="pizza-number"></span></p>
+                <p><strong>Favorite Crust :</strong><span class="pizza-favor"></span></p>
+                <p><strong>Favorites Toppings: </strong><span class="pizza-toppings"></span></p>
+                <p><strong>Your Location  : </strong><span class="pizza-local"></span></p>
+                <ul id="addresses"></ul>                   
+            </div>
+        <!-- </div> -->
+      </div>
+    </div> 
+
+</form> 
+</div> 
+</div>  
+</div>
+
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/index.js"></script>
 </body>

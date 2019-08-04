@@ -54,10 +54,11 @@ color:slategrey;
         margin-top: 40px;
     }
     #ordern {
-       margin-top:260px;
-       margin-left:500px;
+       /* margin-top:260px;
+       margin-left:500px; */
        
         background-color:slategrey;
+        margin-top:260px;
     
     }
     #ordern:hover{
@@ -78,8 +79,8 @@ color:slategrey;
     color:slategrey;
 }
 .click4 >h3{
-    color:slategrey;
-}
+    color:slategrey;}
+/* }
   div.label{
       margin: 0%;
       padding: 0%;
@@ -153,7 +154,7 @@ display:none;
       margin-left:540px;
       margin-top:-200px;
   } */
-  #submit{
+  /* #submit{
       width:90px;
       height:30px;
       margin-top:-60px;
@@ -161,11 +162,11 @@ display:none;
       color:black;
 
       background-color:slategrey;
-}
+} */
 
 
 
-  #cost1{
+   #cost1{
       
       font-size:65px;
       margin-top:-260px;
@@ -175,7 +176,7 @@ display:none;
   #cost2{
       
     font-size:65px;
-    margin-top:-260px;
+    margin-top:-235px;
     text-align: center;
     font-weight: bold;
 }
@@ -195,7 +196,7 @@ display:none;
     margin-top:-260px;
     text-align: center;
     font-weight: bold;
-}
+} */
  .Showbill{
     margin-top:300px;
     background-color:slategrey;
@@ -204,4 +205,73 @@ display:none;
 .Showbill h3{
     text-align:center;
 
+} 
+
+.container{
+   
+    
+    text-align: center;
+    color:black;
+    
+    margin-top:60px;
+    
+     
+}
+label{
+    /* margin-left:60%; */
+    color:black;
+}
+.form-control , .btn{
+    /* margin-left: 70%; */
+    color:black;
+    /* text-align: center; */
+}
+#new-pizz{
+    display: none;
+    margin-top:60px;
+    
+
+    height:600px;
+    
+
+   
+     color:white;
+    margin-top:60px;
+
+
+}
+#show-your-order{
+    margin-top:60px;
+}
+#bill{
+    margin-top:40px;
+}
+#head{
+    margin-bottom:20px;
+}
+.cont{
+    background-image: url("../img/login_background2-min.png");
+    background-repeat: no-repeat;
+    background-size:cover; 
+    width:104%; 
+    
+
+}
+#add-address{
+    margin-top:30px;
+    background-color:slategrey;
+
+}
+#add{
+    margin-top:30px;
+    background-color:slategrey;
+}
+#add:hover{
+color:white;
+}
+.ad{
+    background-image: url("../img/login_background2-min.png");
+    background-repeat: no-repeat;
+    background-size:cover; 
+    width:104%; 
 }
