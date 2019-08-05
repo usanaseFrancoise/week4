@@ -33,3 +33,7 @@ body{
    margin-left:400px;
     background-color: rgb(112, 72, 34);
 }
+#two:hover{
+    color:white;
+    opacity: 0.8;
+}
