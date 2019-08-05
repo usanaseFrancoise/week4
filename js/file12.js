@@ -1,16 +1,6 @@
-
-// $(document).ready(function() {
-//     $("#btns").click(function() {
-//         $("#orderz").show();
-//        $("#btns").show ();  
-           
-//     });
-
-
-
-document.getElementById("Delivery").addEventListener("click", function () { 
-    prompt("enter your addresses");
-    alert("Thank you for being our valued customer. We are grateful for the pleasure of serving you and meeting your printing needs. please stay in touch for your delivery");
+document.getElementById("delivery").addEventListener("click", function () { 
+    prompt("enter your address");
+    alert("thank you for using our services,your order willbe delivered at your place");
     
   })
   function Pizza(type,size,crust,topping,numbers, totalPrice) {
@@ -36,41 +26,41 @@ $(document).ready(function() {
     $("form#orderz").submit(function(event) {
       event.preventDefault();
   
-      var typeP = $("select#sel1").val();
-      var sizeP = $("select#sel2").val();
-      var crustP= $("select#sel3").val();
-      var toppingP =$("select#sel4").val();
-      var numberP = $("input#sel5").val();
+      var typeA = $("select#sel1").val();
+      var sizeB = $("select#sel2").val();
+      var crustC = $("select#sel3").val();
+      var toppingD =$("select#sel4").val();
+      var numberz = $("input#sel5").val();
      
-      var newPizzaA = new Pizza(typeP,sizeP,crustP,toppingP,numberP,total);
-  console.log(newPizzaA);
+      var newPizza = new Pizza(typeA,sizeB,crustC,toppingD,numberz,total);
+  console.log(newPizza);
   
     
     
       $(".btn").last().click(function() {
         $("#show").show();
-        $("#show h2").text(newPizzaA.type);
-        $(".type").text(newPizzaA.type);
-        $(".size").text(newPizzaA.size);
-        $(".crust").text(newPizzaA.crust);
-        $(".topping").text(newPizzaA.topping);
-        $(".numbers").text(newPizzaA.numbers);
-        $(".totalPrice").text(newPizzaA.totalPrice);
+        $("#show h2").text(newPizza.type);
+        $(".type").text(newPizza.type);
+        $(".size").text(newPizza.size);
+        $(".crust").text(newPizza.crust);
+        $(".topping").text(newPizza.topping);
+        $(".numbers").text(newPizza.numbers);
+        $(".totalPrice").text(newPizza.totalPrice);
         $("ul#addresses").text("");
        
       });
     });
       $(".btn").click(function() {
-        var typeD= $("select#aa").val();
-      var siz = $("select#bb").val();
-      var cruste = $("select#cc").val();
-      var toppingd =$("select#dd").val();
-      var number = $("input#ee").val();
+        var typec = $("select#sel1").val();
+      var sized = $("select#sel2").val();
+      var cruste = $("select#sel3").val();
+      var toppingd =$("select#sel4").val();
+      var number = $("input#sel5").val();
      
        var price, totalPrice;
-       switch (typeD) {
+       switch (typec) {
            case type = "PEPERONI pizza":
-               switch (siz) {
+               switch (sized) {
                    case size = "Small":
                        price = 5500;
                        if (cruste === "Thin Crust") {
@@ -115,8 +105,8 @@ $(document).ready(function() {
                     break;
                }
                break;
-               case typeD = "PIZERIA pizza":
-               switch (siz) {
+               case type = "PIZERIA pizza":
+               switch (sized) {
                 case size = "Small":
                     price = 6500;
                     if (cruste === "Thin Crust") {
@@ -162,8 +152,8 @@ $(document).ready(function() {
                     break;
             }
             break;
-            case typeD= "CHICKEN pizza":
-            switch (siz) {
+            case type = "CHICKEN pizza":
+            switch (sized) {
              case size = "Small":
                  price = 8500;
                  if (cruste === "Thin Crust") {
@@ -208,8 +198,8 @@ $(document).ready(function() {
                 break;
          }
          break;
-         case typeD = "DEEP FISH pizza":
-         switch (siz) {
+         case type = "DEEP FISH pizza":
+         switch (sized) {
           case size = "Small":
               price = 7500;
               if (cruste === "Thin Crust") {
