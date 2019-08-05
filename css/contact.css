@@ -9,3 +9,19 @@ h1{
     margin:40px;
     
   }
+  .sent{
+    color:black;
+    
+  }
+  /* body{
+    background-color:black;
+  } */
+  h2{
+    font-weight:bold;
+    color:black;
+    PADDING:50PX;
+    text-align:center;
+    padding-top:50px;
+    margin-bottom:0;
+    
+  }
