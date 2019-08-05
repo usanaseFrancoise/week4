@@ -1,95 +1,6 @@
-// $(document).ready(function() {
-//     $("#ordern").click(function() {
-//         $("#form").show();
-//         $("#ordern").show ();  
-          
-//     });
-
-
-// $(document).ready(function() {
-//     $("#add-address").click(function() {
-//       $("#new-pizzas").append('<div class="form-group">'+
-//                               '<label for="type-pizza"><strong>Type of pizza :     </strong></label>'+
-//                       '<select class="form-control" id="type" value="type" >'+
-//                           '<option  value="choose Pizza">select Pizza</option>'+
-//                           '<option  id="PEPERONI pizza">PEPERONI pizza</option>'+
-//                           '<option  id="PIZERIA pizza">PIZERIA pizza</option>'+
-//                           '<option  id="CHICKEN pizza">CHICKEN pizza</option>'+
-//                           '<option  id="DEEP FISH pizza">DEEP FISH pizza</option>'+
-//                        '</select>'+
-//                       '</div>'+
-//                 '<div class="form-group">'+
-                      
-//                              ' <label for="size"><strong>Pizza Size:      </strong></label>'+
-//                       '<select class="form-control" id="new-size" value="size">'+
-//                           '<option  value=" Pizza Size">select Pizza size</option>'+
-//                           '<option  id="Small" >Small</option>'+
-//                           '<option  id="Medium" >Medium</option>'+
-//                           '<option  id="Large">Large</option>'+
-                               
-//                        '</select>'+
-//               ' </div>'+
-               
-//           '<div class="new-pizza">' +
-                                
-//                                    '<div class="form-group">' +
-    
-//          '<label for="new-number"><strong>Number of Pizza:</strong></label>' +
-//  ' <input type="number" min=1 class="form-control"id="numbers" >' +
-                            
-//                                    '</div>' +
-//                                    '<div class="form-group">' +
-                                  
-//                       '<label for="new-crust"><strong>Favorite Crust:</strong></label>' +
-// '<select class="form-control new-number" id="number" value="number" >' +
-//                                '<option value="Thin" id="crust">Thin Crust</option>' +
-//                               '<option value="Thick" id="crust">Thick Crust</option>' +
-//                                '<option value="FatBread" id="crust">FatBread Crust</option>' +
-//                                '<option value="Custom" id="crust">Custom Crust</option>' +
-                               
-                                    
-//                             '</select>' +
-//                                      '</div>' +
-                                   
-                            
-//                                  '</div>'+
-//                                  '<div class="form-group">'+
-//                '<label for="new-toppings"><strong>Favorite Toppings:</strong></label>'+
-//         '<select class="form-control new-toppings" id="new-toppings"  >'+
-//             '<option  value=" Pizzas  Toppings">Pizzas  Toppings</option>'+
-//             '<option  id="topping">Mushrooms</option>'+
-//             '<option  id="topping">Onions</option>'+
-//             '<option  id="topping">Green peppers</option>'+
-//             '<option  id="topping">Black olives</option>'+
-            
-                 
-//          '</select>'+
-//         '</div>'+
-//                     '<div class="form-group">'+
-//                             '<label for="new-location"><strong>your Location:</strong></label>'+
-//                         '<input id="new-location" class="form-control type="text" placeholder="Enter your Location" >'+
-//                     '</div>'+
-//             '</div>'+
-//     '</div>'+
-   
-  
-
-      
-//                   '</form>'+
-//                   '</div>');
-                                 
-//     });
-
-
-
-//
-
-
-
-
 document.getElementById("delivery").addEventListener("click", function () { 
     prompt("enter your address");
-    alert("Thank you for being our valued customer. We are grateful for the pleasure of serving you and meeting your printing needs. please stay in touch for your delivery");
+    alert("thank you for using our services,your order willbe delivered at your place");
     
   })
   function Pizza(type,size,crust,topping,numbers, totalPrice) {
@@ -117,8 +28,8 @@ $(document).ready(function() {
   
       var typeA = $("select#sel1").val();
       var sizeB = $("select#sel2").val();
-      var crustC = $("select#sel3").val();
-      var toppingD =$("select#sel4").val();
+      var crustC = $("select#cc").val();
+      var toppingD =$("select#dd").val();
       var numberz = $("input#sel5").val();
      
       var newPizza = new Pizza(typeA,sizeB,crustC,toppingD,numberz,total);
@@ -140,11 +51,11 @@ $(document).ready(function() {
       });
     });
       $(".btn").click(function() {
-        var typec = $("select#aa").val();
-      var sized = $("select#bb").val();
-      var cruste = $("select#cc").val();
-      var toppingd =$("select#dd").val();
-      var number = $("input#ee").val();
+        var typec = $("select#sel1").val();
+      var sized = $("select#sel2").val();
+      var cruste = $("select#sel3").val();
+      var toppingd =$("select#sel4").val();
+      var number = $("input#sel5").val();
      
        var price, totalPrice;
        switch (typec) {
