@@ -25,3 +25,11 @@ body{
     text-align:center;
     margin-right:130px;
 }
+#one{
+    margin-top:-10px;
+    text-align:center;
+}
+#two{
+   margin-left:400px;
+    background-color: rgb(112, 72, 34);
+}
