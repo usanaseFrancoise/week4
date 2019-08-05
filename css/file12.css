@@ -53,18 +53,18 @@ color:slategrey;
     #photo img {
         margin-top: 40px;
     }
-    #ordern {
+    /* #ordern {
        /* margin-top:260px;
        margin-left:500px; */
-       
+/*        
         background-color:slategrey;
-        margin-top:260px;
+        margin-top:260px; */
     
-    }
+    /* }
     #ordern:hover{
         transform: scale(1.1);
         background-color: blanchedalmond;
-    }
+    } */ */
 
 #pa h3{
     margin-top:-50px;
@@ -80,90 +80,6 @@ color:slategrey;
 }
 .click4 >h3{
     color:slategrey;}
-/* }
-  div.label{
-      margin: 0%;
-      padding: 0%;
-      margin-top:1.125em;
-      margin-bottom: 0.125em;
-      font-size:100%;
-      font-weight:bold;
-      color:black;
-      display:block;
-      text-align:left;
-  }
-  div.group{
-    margin:0;
-    padding: 0;
-    font-weight: bold;
-  }
-  div.group div.title{
-     margin: 0%;
-     padding: 0;
-     font-weight: bold;
-
-  }
-  div .group div.label{
-      margin:0;
-      padding: 0%;
-      margin-top:0.25em;
-      margin-bottom: 0.25em;
-      font-weight:normal;
-  }
-  input[type="submit"]{
-      margin-top:2em;
-      text-align:center;
-      
-    background-color:slategrey;
-      
-  }
-  input[type="submit"]:hover{
-      transform: scale(1.1);
-      opacity:0.8;
-  }
-  #form{
-display:none;
-  }
-  #id-number{
-      width:120px;
-     
-      font-size:100%;
-      font-weight:bold;
-      color:black;
-      display:block;
-  }
-  #choose{
-      font-weight: bold;
-      margin:10px;
-  }
-  #size{
-      font-weight: bold;
-      margin:10px;
-  }
-  #butt{
-      margin-right:20px;
-      
-      width:120px;
-      height:40px;
-  }
-  #add{
-        background-color:slategrey;
-        margin:10px;
-  }
-  /* #submit{
-      margin-left:540px;
-      margin-top:-200px;
-  } */
-  /* #submit{
-      width:90px;
-      height:30px;
-      margin-top:-60px;
-      margin-left:540px;
-      color:black;
-
-      background-color:slategrey;
-} */
-
 
 
    #cost1{
@@ -197,15 +113,7 @@ display:none;
     text-align: center;
     font-weight: bold;
 } */
- .Showbill{
-    margin-top:300px;
-    background-color:slategrey;
-     display: none;  
-}
-.Showbill h3{
-    text-align:center;
-
-} 
+ 
 
 .container{
    
@@ -262,16 +170,51 @@ label{
     background-color:slategrey;
 
 }
-#add{
+/* #add{
     margin-top:30px;
-    background-color:slategrey;
-}
-#add:hover{
-color:white;
-}
-.ad{
+    background-color:slategrey; */
+/* } */
+
+/*   */
+/* .ad{
     background-image: url("../img/login_background2-min.png");
     background-repeat: no-repeat;
     background-size:cover; 
-    width:104%; 
+    width:104%;} */
+.order{
+        margin-top:90px;
+        background-image: url("../img/login_background2-min.png");
+        height:450px;
+        background-repeat: no-repeat;
+        background-size:cover; 
+        
+}
+#btns{
+    margin-top:240px;
+    text-align: center;
+    margin-left:45%;
+    background-color:slategrey;
+}
+/* #orderz{
+    display: none;
+    
+*/#show{
+    background-color:white;
+    margin-top: 50px;
+}
+#btn{
+    margin-top:-120px;
+    background-color:slategrey;
+    margin-left:500px;
+}
+#btn:hover{
+    color:white;
+}
+#delivery:hover{
+    color:white;
+}
+#delivery{
+    margin-top:-70px;
+    background-color:slategrey;
+    margin-left:600px;
 }

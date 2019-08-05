@@ -260,9 +260,9 @@ $(document).ready(function(){
         var inputtedFavoritePizza=$("select#new-crust").val();
         var inputtedFavoritesPizza=$("input#new-Toppings").val();
         var inputtedLocationPizza=$("input#new-location").val();
-       
+         )
 
-         var newPizza_Order=new Pizza_Order(inputtedSizePizza,inputtedTypePizza,inputtedNumberPizza,inputtedFavoritePizza,inputtedLocationPizza,inputtedFavoritesPizza);
+         var newPizza_Order=new Pizza_Order(inputtedSizePizza,inputtedTypePizza,inputtedNumberPizza,inputtedFavoritePizza,inputtedLocationPizza,inputtedFavoritesPizza,total);
             console.log(newPizza_Order);
         //      $(".new-pizza").each(function(){
         //          var inputtedNumberPizza=$(this).find("select.numbers").val();
@@ -282,7 +282,8 @@ $(document).ready(function(){
     $(".pizza-favor").text(newPizza_Order.favoritePizza);
     $(".pizza-toppings").text(newPizza_Order.FavoritesPizza);
     $(".pizza-local").text(newPizza_Order.locationPizza);
-    // $("ul#addresses").text("");
+    $(".totalPrice").text(newPizza_Order.totalPrice);
+     $("ul#addresses").text("");
     // $(".pizza-local").text(newPizza_Order.locationPizza);
     // newPizza_Order.addresses.forEach(function(address) {
     //   $("ul#addresses").append("<li>" + address.numberPizza + ", " + address.favoritePizza+ "</li>");
@@ -303,8 +304,36 @@ $(document).ready(function() {
           $("#ordern").show ();  
               
        });
- });
+ $(".btn").click(function(){
+     var sized=$("select#new-size").val();
+     var typep=$(" select#type").val();
+     var num=$("input#numbers").val();
+     var crusts=$("select#new-crust").val();
+     var topp=$("select#new-Toppings").val();
+     var loca=$("input#new-location").val();
 
+switch(typep){
+    case type="PEPERONI pizza":
+    switch(sized){
+        case size="Small":
+        price=5500;
+        if(crusts==="Thin Crust"){
+            total=(price*num)+1000;
+        } else if(crusts==="Thick Crust"){
+            total=(price*numr)+1500;
+        }
+        else if(crusts==="FatBread Crust"){
+            total=(price*num)+2500;
+        }
+        else {
+            total=(price*num)+4500;
+        }
+        break;
+    } 
+}
+console.log(total);
+});
+});
 // $("form#new-pizz").submit(function(event){
 //     event.preventDefault();
 //     var input
